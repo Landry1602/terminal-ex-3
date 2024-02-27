@@ -1,0 +1,9 @@
+
+135  curl https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv > liste.csv
+136  grep 2019,PHP liste.csv | wc -l > php_france_2019.csv 
+137  grep Toulouse liste.csv > temp_toulouse.csv
+138  grep Biarritz liste.csv > temp_biarritz.csv
+139  cat temp_toulouse.csv temp_biarritz.csv > temp_JS.csv
+140  grep JavaScript temp_JS.csv > javascript_biarritz_toulouse.csv 
+141  tail -n15 > history.txt
+142  history | tail -n8 > history.txt
